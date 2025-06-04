@@ -1,0 +1,21 @@
+# Virtual Environment
+venv/
+myenv/
+clean_venv/
+*.env
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# IDE / Editor specific
+.vscode/
+.idea/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Streamlit secrets (if you use them locally and don't want to push)
+# .streamlit/secrets.toml
