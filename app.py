@@ -133,13 +133,13 @@ class LipVideoProcessor(VideoProcessorBase):
             min_detection_confidence=0.7,
             min_tracking_confidence=0.7
         )
-        self.color_bgr = hex_to_bgr("#D97C87")
+        self.color_bgr = hex_to_bgr("#EC8171")
         self.alpha = 0.2
         self.apply_gloss = True  # グロス効果のデフォルト状態
         self.gloss_alpha = 0.25 # グロスの強さのデフォルト
 
     # update_params メソッドを修正
-  　# StreamlitのUIでユーザーが設定を変更した際に、ビデオ処理クラス内のパラメータを更新するためのメソッド
+    # StreamlitのUIでユーザーが設定を変更した際に、ビデオ処理クラス内のパラメータを更新するためのメソッド
     # これにより、リアルタイムでリップの色やグロス効果を調整できる
     def update_params(self, color_hex, alpha, apply_gloss, gloss_alpha):
         self.color_bgr = hex_to_bgr(color_hex)
@@ -173,13 +173,14 @@ class LipVideoProcessor(VideoProcessorBase):
 
 # --- Streamlit UI ---
 st.set_page_config(layout="wide")
-st.title("💄 リアルタイム リップメイクシミュレータ") 
+st.title("💄 リアルタイムリップメイクシミュレータ")
+st.title("(キャンメイク むちぷるティント対応)") 
 st.markdown("---")
 
 colors_hex = {
-    "アップルソルベ": "#DB232E", "オッドコーラル": "#F95557", "チリンチリン": "#D9414B",
-    "ハッシュドチェリー": "#C53D65", "ローザ": "#E73D5D", "ブリュレ": "#AF2C23",
-    "コットンピオニー (デフォルト風)": "#D97C87", "ヌードベージュ": "#C8A18F", "ベリーレッド": "#B3003B"
+    "バタースコッチ(イエベ秋さん向けオレンジベージュ)": "#A54A03", "モモ(イエベ春さん向けヌーディーピンク)": "#CD6464", "   ワインベリー(ブルベ冬さん向けローズレッド)": "#A61242",
+    "チョコミルク(イエベ秋さん向けブラウン)": "#A24D38", "フィグピューレ(ニュートラルな赤みローズカラー)": "#4C0100", "ラズベリーケーキ(ブルベ夏さん向けモーヴピンク)": "#E06D91",
+    "フルーツオレ(イエベ春さん向けコーラル)": "#EC8171",
 }
 
 st.sidebar.header("🎨 カラー設定")
