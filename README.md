@@ -1,4 +1,7 @@
 # 💄 リップメイクシミュレーター（Real-time Lip Makeup Simulator）
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io)
+[![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)](https://opencv.org)
 
 **「店頭テスターの衛生面への不安」**や**「オンラインでの色選びの難しさ」**といった課題に対し、
 
